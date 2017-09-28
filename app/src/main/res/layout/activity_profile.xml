@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.yassin.streetglide.Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/yellow"
+    ></LinearLayout>
+
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:layout_marginTop="127dp"
+    android:src="@drawable/yassin3"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    app:border_width="4dp"
+    app:border_color="@color/white"
+    android:id="@+id/circleimage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circleimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:text="Yassin EL-Hadedy"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idrunner"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="ID NUMBER:101"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone2"
+        android:layout_below="@id/idrunner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/imagephone"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagephone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="01063039159"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+
+
+</RelativeLayout>

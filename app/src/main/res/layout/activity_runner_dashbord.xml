@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="gravity"
+    android:background="@color/white"
+    tools:context="com.example.yassin.streetglide.RunnerDashbord">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="98dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="DisableBaselineAlignment"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.27"
+            android:background="@color/yellow"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:id="@+id/deliverystatus"
+            tools:ignore="UseCompoundDrawables"
+            android:onClick="deliverystatus">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:src="@drawable/list1"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:text="Delivery Status"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.28"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            tools:ignore="UseCompoundDrawables"
+            android:onClick="cashcollect"
+            android:id="@+id/cashcollect">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cashcollect"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:text="Cash Collection"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.27"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:onClick="scanshipment"
+            android:id="@+id/scanshipment"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:src="@drawable/barcode"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:text="Scan Shipment"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

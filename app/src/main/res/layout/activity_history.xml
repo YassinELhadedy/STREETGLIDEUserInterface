@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yassin.streetglide.History">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:background="@color/yellow">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+
+            android:layout_gravity="left">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calendar1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 july 2017"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/linearLayout"
+        android:layout_toRightOf="@id/linearLayout"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:background="@color/yellow"
+       >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/filter1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recycleviewhistory"
+    android:layout_below="@id/linearLayout"
+    ></android.support.v7.widget.RecyclerView>
+</RelativeLayout>
